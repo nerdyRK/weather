@@ -30,7 +30,7 @@ app.use(express.static(spath,{extensions:['html']}))
 app.use(express.json({limit:'1mb'}))
 
 app.get('',(req,res)=>res.send('welcome'))
-app.get('/weather-m',(req,res)=>res.sendFile(__dirname+"weather-m")
+app.get('/weather-m',(req,res)=>res.sendFile(__dirname+"weather-m.html")
 app.get('/weather/:city', async (req,res)=> {
     // console.log(req.params)
   const city=req.params.city
