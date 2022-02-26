@@ -327,7 +327,7 @@ background-color: rgb(252, 0, 0);
             //without this line on submit keeps reloading page 
             e.preventDefault()
             if (input.value) {
-                let api_url = `/weather-m/${input.value}`
+                let api_url = `/weather/${input.value}`
                 let resp = await fetch(api_url)
                 let data = await resp.json()
                 console.log(data)
